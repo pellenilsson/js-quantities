@@ -143,6 +143,18 @@ export var UNITS = {
   "<poise>"  : [["P","poise"], 0.1, "viscosity", ["<kilogram>"],["<meter>","<second>"] ],
   "<stokes>" : [["St","stokes"], 1e-4, "viscosity", ["<meter>","<meter>"], ["<second>"]],
 
+  /* volumetric_flow */
+  "<cms>" : [["cms"], 1, "volumetric_flow", ["<meter>","<meter>","<meter>"], ["<second>"]],
+  "<sccm>" : [["sccm"], 1.6666666666666667e-08, "volumetric_flow", ["<meter>","<meter>","<meter>"], ["<second>"]],
+  "<cfts>" : [["cfts"], 1, "volumetric_flow", ["<meter>","<meter>","<meter>"], ["<second>"]],
+  "<galmin>" : [["galmin"], 6.309019666666667e-05, "volumetric_flow", ["<meter>","<meter>","<meter>"], ["<second>"]],
+  "<galmin-imp>" : [["galmin-imp"], 7.576816666666667e-05, "volumetric_flow", ["<meter>","<meter>","<meter>"], ["<second>"]],
+
+  /* volumetric_flux */
+  "<cmpssqm>" : [["cmpssqm"], 1, "volumetric_flux", ["<meter>"], ["<second>"]],
+  "<lpssqm>" : [["lpssqm"], 1e-3, "volumetric_flux", ["<meter>"], ["<second>"]],
+  "<mmpd>" : [["mmpd"], 1.157407e-08, "volumetric_flux", ["<meter>"], ["<second>"]],
+
   /* substance */
   "<mole>"  :  [["mol","mole"], 1.0, "substance", ["<mole>"]],
 
