@@ -331,6 +331,18 @@ var UNITS = {
   "<poise>"  : [["P","poise"], 0.1, "viscosity", ["<kilogram>"],["<meter>","<second>"] ],
   "<stokes>" : [["St","stokes"], 1e-4, "viscosity", ["<meter>","<meter>"], ["<second>"]],
 
+  /* volumetric_flow */
+  "<cms>" : [["cms"], 1, "volumetric_flow", ["<meter>","<meter>","<meter>"], ["<second>"]],
+  "<sccm>" : [["sccm"], 1.6666666666666667e-08, "volumetric_flow", ["<meter>","<meter>","<meter>"], ["<second>"]],
+  "<cfts>" : [["cfts"], 1, "volumetric_flow", ["<meter>","<meter>","<meter>"], ["<second>"]],
+  "<galmin>" : [["galmin"], 6.309019666666667e-05, "volumetric_flow", ["<meter>","<meter>","<meter>"], ["<second>"]],
+  "<galmin-imp>" : [["galmin-imp"], 7.576816666666667e-05, "volumetric_flow", ["<meter>","<meter>","<meter>"], ["<second>"]],
+
+  /* volumetric_flux */
+  "<cmpssqm>" : [["cmpssqm"], 1, "volumetric_flux", ["<meter>"], ["<second>"]],
+  "<lpssqm>" : [["lpssqm"], 1e-3, "volumetric_flux", ["<meter>"], ["<second>"]],
+  "<mmpd>" : [["mmpd"], 1.157407e-08, "volumetric_flux", ["<meter>"], ["<second>"]],
+
   /* substance */
   "<mole>"  :  [["mol","mole"], 1.0, "substance", ["<mole>"]],
 
@@ -452,8 +464,11 @@ var UNITS = {
   "<molecule>" : [["molecule","molecules"], 1.0, "counting", ["<1>"]],
   "<dozen>" :  [["doz","dz","dozen"],12.0,"prefix_only", ["<each>"]],
   "<percent>": [["%","percent"], 0.01, "prefix_only", ["<1>"]],
+  "<permille>": [["\u2030","permille"], 0.001, "prefix_only", ["<1>"]],
   "<ppm>" :  [["ppm"],1e-6, "prefix_only", ["<1>"]],
-  "<ppt>" :  [["ppt"],1e-9, "prefix_only", ["<1>"]],
+  "<ppb>" :  [["ppb"],1e-9, "prefix_only", ["<1>"]],
+  "<ppt>" :  [["ppt"],1e-12, "prefix_only", ["<1>"]],
+  "<ppq>" :  [["ppq"],1e-15, "prefix_only", ["<1>"]],
   "<gross>" :  [["gr","gross"],144.0, "prefix_only", ["<dozen>","<dozen>"]],
   "<decibel>"  : [["dB","decibel","decibels"], 1.0, "logarithmic", ["<decibel>"]]
 };
